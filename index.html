@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstarp/css/bootstrap.min.css">
+  <title>Country</title>
+</head>
+
+<body>
+   <div class="container">
+      <h2 class="text-center my-3">Search country</h2>
+      <form class="js-search-form d-flex" autocomplete="off">
+         <input class="js-search-input w-25 me-3 form-control" type="text" name="user-conut-search"
+            aria-label="conut-search" placeholder="search" required>
+                
+         <button class="btn btn-primary" type="submit">Qidirish</button>
+      </form>
+
+      <ul
+         class="js-search-list list-unstyled mt-4 w-25">
+      </ul>
+   </div>
+
+  <div class="js-spinner spinner-border text-danger m-5 d-none"
+    role="status" style="width: 2rem; height: 2rem;">
+  </div>
+
+  <template id="js-search-temlate">
+    <li class="js-country-item card mb-4">
+      <img src="" class="country__img card-img-top" alt="" width="300" height="180">
+      <div class="card-body">
+        <h4 class="js-country-title card-title"></h4>
+
+        <p class="js-country-text mb-1"></p>
+      </div>
+    </li>
+  </template>
+
+  <script src="./bootstarp/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
